@@ -1,0 +1,6 @@
+{
+  "test_images": 847,
+  "test_accuracy": 0.5053128689492326,
+  "num_classes": 41,
+  "checkpoint": "D:\\major\\project\\artifacts\\checkpoints\\best_model_finetuned.pth"
+}

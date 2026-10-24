@@ -1,0 +1,78 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+.venv312/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Dataset images and generated data
+data/raw/
+data/processed/
+data/external/
+Indian_bovine_breeds/
+*.zip
+
+# Generated reports and training artifacts
+reports/generated/
+reports/dataset_audit_report.csv
+artifacts/checkpoints/
+
+# Notebook and editor files
+.ipynb_checkpoints/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+
+# Duplicate-review image grids
+reports/duplicate_review/
+
+# Intermediate duplicate-audit files
+reports/exact_duplicates.csv
+reports/cross_breed_duplicates.csv
+reports/duplicate_group_summary.csv
+reports/excluded_conflicting_duplicates.csv
+
+
+
+# Duplicate review images
+reports/duplicate_review/
+
+# Intermediate duplicate audit outputs
+reports/exact_duplicates.csv
+reports/cross_breed_duplicates.csv
+reports/duplicate_group_summary.csv
+reports/excluded_conflicting_duplicates.csv
+
+# Local dataset splits and generated data
+data/processed/
+
+
+
+# Raw bovine dataset images
+Indian_bovine_breeds/
+
+# Unnecessary experimental model checkpoints
+artifacts/checkpoints/
+
+# Large notebook archive
+notebooks.zip
+
+# Duplicate-review images
+reports/duplicate_review/

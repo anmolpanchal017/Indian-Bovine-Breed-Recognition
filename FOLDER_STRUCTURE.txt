@@ -1,0 +1,106 @@
+INDIAN_BOVINE_BREEDS_PROJECT/
+|
++-- README.md
++-- PROJECT_ARCHITECTURE.md
++-- DATASET_CARD.md
++-- FOLDER_STRUCTURE.txt
++-- requirements.txt
++-- audit_dataset.py
++-- bovine_breeds_metadata.csv
++-- .gitignore
+|
++|-- Indian_bovine_breeds/              Original dataset location
+|    +-- Indian_bovine_breeds/
+|        +-- Alambadi/
+|        +-- Amritmahal/
+|        +-- Ayrshire/
+|        +-- Banni/
+|        +-- Bargur/
+|        +-- Bhadawari/
+|        +-- Brown_Swiss/
+|        +-- Dangi/
+|        +-- Deoni/
+|        +-- Gir/
+|        +-- Guernsey/
+|        +-- Hallikar/
+|        +-- Hariana/
+|        +-- Holstein_Friesian/
+|        +-- Jaffrabadi/
+|        +-- Jersey/
+|        +-- Kangayam/
+|        +-- Kankrej/
+|        +-- Kasargod/
+|        +-- Kenkatha/
+|        +-- Kherigarh/
+|        +-- Khillari/
+|        +-- Krishna_Valley/
+|        +-- Malnad_gidda/
+|        +-- Mehsana/
+|        +-- Murrah/
+|        +-- Nagori/
+|        +-- Nagpuri/
+|        +-- Nili_Ravi/
+|        +-- Nimari/
+|        +-- Ongole/
+|        +-- Pulikulam/
+|        +-- Rathi/
+|        +-- Red_Dane/
+|        +-- Red_Sindhi/
+|        +-- Sahiwal/
+|        +-- Surti/
+|        +-- Tharparkar/
+|        +-- Toda/
+|        +-- Umblachery/
+|        +-- Vechur/
+|
+|-- data/
+|    +-- README.md
+|    +-- raw/
+|    |    +-- images/                   Future location for unchanged images
+|    +-- processed/                     Resized/cleaned/augmented data
+|    +-- metadata/                      Clean metadata and schemas
+|    +-- splits/                        Train/validation/test file lists
+|    +-- external/                      External datasets and references
+|
+|-- src/
+|    +-- data/                          Data loading and validation
+|    +-- features/                      Image preprocessing and features
+|    +-- training/                      Model training code
+|    +-- evaluation/                    Metrics and evaluation code
+|
+|-- models/                             Model definitions or saved model code
+|-- configs/                            Experiment configuration files
+|-- notebooks/                          Jupyter notebooks
+|-- tests/                              Automated tests
+|
+|-- artifacts/
+|    +-- checkpoints/                   Saved model checkpoints
+|
+|-- reports/
+     +-- dataset_audit_report.csv      Generated dataset validation report
+
+DATASET RULES
+-------------
+1. The current source images are in:
+   Indian_bovine_breeds/Indian_bovine_breeds/<breed>/<image-file>
+
+2. The current metadata file is:
+   bovine_breeds_metadata.csv
+
+3. The metadata columns are:
+   image_id, breed, path, file extension
+
+4. The breed folder name must match the metadata breed label.
+
+5. Raw images must not be edited directly.
+
+6. Processed files go in data/processed/.
+
+7. Train, validation, and test manifests go in data/splits/.
+
+8. Generated audit results and metrics go in reports/.
+
+9. Model checkpoints go in artifacts/checkpoints/.
+
+10. The current dataset has not been moved into data/raw/images/. That folder is
+    reserved as the future canonical location.

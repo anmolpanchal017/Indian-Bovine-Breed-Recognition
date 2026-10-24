@@ -1,0 +1,27 @@
+
+# Deep Learning (CPU-compatible)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+
+# Data processing
+numpy
+pandas
+
+# Image processing
+Pillow
+
+# Machine Learning and evaluation
+scikit-learn
+
+# Visualization
+matplotlib
+
+# Progress bars
+tqdm
+
+# Web application
+streamlit
+
+# Testing
+pytest
