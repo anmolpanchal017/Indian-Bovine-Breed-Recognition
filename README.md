@@ -90,3 +90,18 @@ The checkpoint stores the model weights, class names, and class-to-index mapping
 ## License and Dataset Attribution
 
 Add the applicable project license and dataset attribution after confirming the source dataset's usage terms.
+
+
+🎓 Academic Major Project
+
+This project was developed as part of our B.Tech Computer Science and Engineering major project at Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore.
+
+👥 Project Team
+
+Anmol Panchal — Team Leader & AI/ML Engineer
+
+Anish Tiwari — Team Member
+
+Anirudh Pachori — Team Member
+
+Abhishek Singh — Team Member
